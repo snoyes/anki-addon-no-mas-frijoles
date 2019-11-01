@@ -16,7 +16,7 @@ You can exit the virtual environment now:
 
 Copy .venv\Lib\site-packages\googletrans to your add-on folder.
 
-Within your add-on's code, e.g. in __init__.py, adjust the path so that the import will look in the correct directory for the module.
+Within your add-on's code, e.g. in \_\_init\_\_.py, adjust the path so that the import will look in the correct directory for the module.
 
 ```
 import os
@@ -24,6 +24,5 @@ import sys
 sys.path.insert(0, os.path.dirname(__file__))
 ```
 
-Now you can import it, e.g.
+Now you can import it, e.g.  
 `from googletrans import Translator`
-
